@@ -1,0 +1,37 @@
+[project]
+name = 'pycurse'
+authors = [
+    { name = 'Alexandre Flament', email = 'alex.andre@al-f.net' }
+]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: MacOS',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Programming Language :: Python',
+    'Programming Language :: Rust',
+    'Topic :: Internet :: WWW/HTTP',
+]
+
+dynamic = [
+    'version',
+]
+
+requires-python = '>=3.8'
+dependencies = []
+
+[build-system]
+requires = ['maturin>=1.1.0,<1.5.0']
+build-backend = 'maturin'
+
+[tool.maturin]
+features = ["pyo3/extension-module"]

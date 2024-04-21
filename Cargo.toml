@@ -1,0 +1,12 @@
+[package]
+name = "pycurse"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+curl = { version = "0.4.46", features= ["static-curl", "http2"] }
+pyo3 = { version = "0.21", features = ["extension-module"] }
+lazy_static = "1.4"
+crossbeam = "0.8.4"
